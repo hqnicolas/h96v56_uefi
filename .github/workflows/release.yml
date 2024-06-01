@@ -1,9 +1,10 @@
 name: release
 
-on:
-  workflow_dispatch:
 
-run-name: Release
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   build_release:
